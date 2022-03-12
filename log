@@ -227,3 +227,24 @@ exercises.c:44:11: error: value computed is not used [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 debd3ef
+sá., 12 de mar. de 2022 19:48:39: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:44:11: error: value computed is not used [-Werror=unused-value]
+          (*suma++);
+          ~^~~~~~~~
+exercises.c: In function 'asignarValor':
+exercises.c:103:35: error: stray '\302' in program
+    for(j=0; j<= v->capacidad; j++)¨{
+                                   ^
+exercises.c:103:36: error: stray '\250' in program
+    for(j=0; j<= v->capacidad; j++)¨{
+                                    ^
+exercises.c:105:18: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+          v->datos=valor;
+                  ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2e7a66f
