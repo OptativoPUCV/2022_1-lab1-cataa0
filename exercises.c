@@ -37,12 +37,15 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
+   int j;
    for(n=0;n<=m;n++){
       a[n]=a[m-n];
+      for(j=0;j<m;j++){
+         *suma++;
       }
-      
 
    }
+}
 
 
 
@@ -62,13 +65,13 @@ recién creado.
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   Persona* nre;
-   nre = (int*)malloc(sizeof(Persona));
-   strcpy(nre->nombre, nombre);
-   strcpy(nre->rut, rut);
-   strcpy(nre->edad, edad);
+   //Persona* nre;
+   //nre = (int*)malloc(sizeof(Persona));
+   //strcpy(nre->nombre, nombre);
+   //strcpy(nre->rut, rut);
+   //strcpy(nre->edad, edad);
 
-   return nre;
+   return NULL;
 }
 
 
@@ -95,7 +98,8 @@ Programe la función void asignarValor(Vector * v, int i, int valor),
 la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
-
+   *v[i]=valor;
+   return valor;
 }
 
 /*

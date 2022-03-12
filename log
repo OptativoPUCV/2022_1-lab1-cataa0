@@ -150,3 +150,24 @@ c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is o
 cc1.exe: all warnings being treated as errors
 Compilation failed
 780d657
+vi., 11 de mar. de 2022 22:36:19: 
+ exercises.c | 20 ++++++++++++--------
+ 1 file changed, 12 insertions(+), 8 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:44:10: error: value computed is not used [-Werror=unused-value]
+          *suma++;
+          ^~~~~~~
+exercises.c: In function 'asignarValor':
+exercises.c:101:4: error: invalid type argument of unary '*' (have 'Vector {aka struct <anonymous>}')
+    *v[i]=valor;
+    ^~~~~
+exercises.c:102:11: error: 'return' with a value, in function returning void [-Werror]
+    return valor;
+           ^~~~~
+exercises.c:100:6: note: declared here
+ void asignarValor(Vector * v, int i, int valor) {
+      ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6ca2fc7
