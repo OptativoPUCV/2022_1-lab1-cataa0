@@ -248,3 +248,18 @@ exercises.c:105:18: error: assignment makes pointer from integer without a cast 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 2e7a66f
+sá., 12 de mar. de 2022 19:49:22: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:44:11: error: value computed is not used [-Werror=unused-value]
+          (*suma++);
+          ~^~~~~~~~
+exercises.c: In function 'asignarValor':
+exercises.c:105:18: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+          v->datos=valor;
+                  ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+31a6529

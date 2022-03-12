@@ -100,7 +100,7 @@ la cual asigna el valor a la posición i del vector v.
 */
 void asignarValor(Vector * v, int i, int valor) {
    int j;
-   for(j=0; j<= v->capacidad; j++)¨{
+   for(j=0; j<= v->capacidad; j++){
       if(j==i){
          v->datos=valor;
       }
