@@ -35,7 +35,7 @@ Esta función debe sumar los últimos m números del
 arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
-
+/*
 void sumaNultimos(int a[], int n, int m, int * suma) {
    int j;
    for(n=0;n<=m;n++){
@@ -47,7 +47,7 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
    }
    
 }
-
+/*
 
 
 /*

@@ -263,3 +263,24 @@ exercises.c:105:18: error: assignment makes pointer from integer without a cast 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 31a6529
+sá., 12 de mar. de 2022 19:50:29: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c:50:1: error: "/*" within comment [-Werror=comment]
+ /*
+  
+exercises.c:53:1: error: "/*" within comment [-Werror=comment]
+ /*
+  
+exercises.c: In function 'asignarValor':
+exercises.c:105:18: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+          v->datos=valor;
+                  ^
+test.c: In function 'test_suma_n':
+test.c:91:5: error: implicit declaration of function 'sumaNultimos' [-Werror=implicit-function-declaration]
+     sumaNultimos(a, 10, m, res);
+     ^~~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+774bf60
