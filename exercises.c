@@ -67,11 +67,12 @@ recién creado.
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona* nre;
-   nre = (int*)malloc(sizeof(Persona));
+   nre = (char*)malloc(sizeof(Persona));
    strcpy(nre->nombre, nombre);
    strcpy(nre->rut, rut);
-   strcpy(nre->edad, edad);
+   nre->edad = edad;
 
+   return nre;
 
 }
 
