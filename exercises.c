@@ -40,12 +40,9 @@ void sumaNultimos(int a[], int n, int m, int * suma) {
    int j;
    for(n=0;n<=m;n++){
       a[n]=a[m-n];
-      for(j=0;j<m;j++){
-         (suma++);
-      }
 
    }
-   
+   sumaN(a,m); 
 }
 
 
@@ -67,7 +64,7 @@ recién creado.
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
    Persona* nre;
-   nre = (char*)malloc(sizeof(Persona));
+   nre = (Persona*)malloc(sizeof(Persona));
    strcpy(nre->nombre, nombre);
    strcpy(nre->rut, rut);
    nre->edad = edad;
@@ -103,7 +100,7 @@ void asignarValor(Vector * v, int i, int valor) {
    int j;
    for(j=0; j<= v->capacidad; j++){
       if(j==i){
-         v->datos=valor;
+         v->datos[j]=valor;
       }
    }
 

@@ -387,3 +387,14 @@ exercises.c:106:18: error: assignment makes pointer from integer without a cast 
 cc1.exe: all warnings being treated as errors
 Compilation failed
 bb5a18b
+sá., 12 de mar. de 2022 20:05:14: 
+ exercises.c | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:40:8: error: unused variable 'j' [-Werror=unused-variable]
+    int j;
+        ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ed4d695
