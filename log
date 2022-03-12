@@ -118,3 +118,9 @@ c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is o
 cc1.exe: all warnings being treated as errors
 Compilation failed
 014d752
+vi., 11 de mar. de 2022 22:18:44: 
+ exercises.c | 7 +------
+ 1 file changed, 1 insertion(+), 6 deletions(-)
+ tests:  1|6
+total_score: 10/70
+620bcca
