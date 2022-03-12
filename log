@@ -26,3 +26,36 @@ vi., 11 de mar. de 2022 22:05:51:
  tests:  0|7
 total_score: 0/70
 19065e8
+vi., 11 de mar. de 2022 22:16:07: 
+ exercises.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'suma':
+exercises.c:16:11: error: 'return' with a value, in function returning void [-Werror]
+    return c;
+           ^
+exercises.c:14:6: note: declared here
+ void suma(int a, int b, int * c) {
+      ^~~~
+exercises.c: In function 'crearPersona':
+exercises.c:66:8: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+    nre = (int*)malloc(sizeof(Persona));
+        ^
+exercises.c:69:11: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+           ^~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:69:22: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+                      ^~~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+11120ca
