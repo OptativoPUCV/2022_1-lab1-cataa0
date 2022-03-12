@@ -216,3 +216,14 @@ sá., 12 de mar. de 2022  0:58:03:
  tests:  1|6
 total_score: 10/70
 1769782
+sá., 12 de mar. de 2022  0:58:54: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:44:11: error: value computed is not used [-Werror=unused-value]
+          (*suma++);
+          ~^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+debd3ef
