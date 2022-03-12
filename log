@@ -298,3 +298,42 @@ exercises.c:105:18: error: statement with no effect [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6d5ae43
+sá., 12 de mar. de 2022 19:53:01: 
+ exercises.c | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:70:9: error: variable or field 'nre' declared void
+    void nre = (int*)malloc(sizeof(Persona));
+         ^~~
+exercises.c:70:9: error: conflicting types for 'nre'
+exercises.c:69:13: note: previous declaration of 'nre' was here
+    Persona* nre;
+             ^~~
+exercises.c:70:15: error: initialization makes integer from pointer without a cast [-Werror=int-conversion]
+    void nre = (int*)malloc(sizeof(Persona));
+               ^
+exercises.c:71:14: error: invalid type argument of '->' (have 'int')
+    strcpy(nre->nombre, nombre);
+              ^~
+exercises.c:72:14: error: invalid type argument of '->' (have 'int')
+    strcpy(nre->rut, rut);
+              ^~
+exercises.c:73:14: error: invalid type argument of '->' (have 'int')
+    strcpy(nre->edad, edad);
+              ^~
+exercises.c:73:22: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+                      ^~~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c: In function 'asignarValor':
+exercises.c:105:18: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+          v->datos=valor;
+                  ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0650ce2

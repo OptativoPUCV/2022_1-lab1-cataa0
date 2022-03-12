@@ -66,11 +66,11 @@ recién creado.
 
 
 Persona* crearPersona(char nombre[], char rut[], int edad) {
-   //Persona* nre;
-   //nre = (int*)malloc(sizeof(Persona));
-   //strcpy(nre->nombre, nombre);
-   //strcpy(nre->rut, rut);
-   //strcpy(nre->edad, edad);
+   Persona* nre;
+   void nre = (int*)malloc(sizeof(Persona));
+   strcpy(nre->nombre, nombre);
+   strcpy(nre->rut, rut);
+   strcpy(nre->edad, edad);
 
    return NULL;
 }
@@ -102,7 +102,7 @@ void asignarValor(Vector * v, int i, int valor) {
    int j;
    for(j=0; j<= v->capacidad; j++){
       if(j==i){
-         v->datos==valor;
+         v->datos=valor;
       }
    }
 
