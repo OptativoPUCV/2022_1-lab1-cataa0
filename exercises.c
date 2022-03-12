@@ -35,19 +35,19 @@ Esta función debe sumar los últimos m números del
 arreglo a y almacena el resultado en *suma.
 Utilice la función sumaN.
 */
-/*
+
 void sumaNultimos(int a[], int n, int m, int * suma) {
    int j;
    for(n=0;n<=m;n++){
       a[n]=a[m-n];
       for(j=0;j<m;j++){
-         (*suma++);
+         (suma++);
       }
 
    }
    
 }
-/*
+
 
 
 /*
@@ -102,7 +102,7 @@ void asignarValor(Vector * v, int i, int valor) {
    int j;
    for(j=0; j<= v->capacidad; j++){
       if(j==i){
-         v->datos=valor;
+         v->datos==valor;
       }
    }
 
