@@ -118,7 +118,8 @@ int obtenerValor(Vector * v, int i){
       if(j==i)
          return v->datos[j];
       
-   }   
+   }
+   return 0;   
 }
 
 /*
