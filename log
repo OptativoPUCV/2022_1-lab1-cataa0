@@ -124,3 +124,29 @@ vi., 11 de mar. de 2022 22:18:44:
  tests:  1|6
 total_score: 10/70
 620bcca
+vi., 11 de mar. de 2022 22:20:49: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:66:8: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+    nre = (int*)malloc(sizeof(Persona));
+        ^
+exercises.c:69:11: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+           ^~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:69:22: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+                      ^~~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+780d657
