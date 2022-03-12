@@ -37,6 +37,7 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
+
    for(n=0;n<=m;n++){
       a[n]=a[m-n];
 
@@ -112,11 +113,11 @@ Programe la función int obtenerValor(Vector * v, int i),
 la cual retorna el valor en la posición i del vector v.
 */
 int obtenerValor(Vector * v, int i) {
-   j=0;
+   int j;
    for(j=0; j<= v->capacidad; j++){
-      if(j==i){
-         return v->datos;
-      }
+      if(j==i)
+         return v->datos[j];
+      
    }
    
 }
