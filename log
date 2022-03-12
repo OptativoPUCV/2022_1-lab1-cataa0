@@ -92,3 +92,29 @@ c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is o
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a7e0bb8
+vi., 11 de mar. de 2022 22:17:16: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'crearPersona':
+exercises.c:65:8: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+    nre = (int*)malloc(sizeof(Persona));
+        ^
+exercises.c:68:11: error: passing argument 1 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+           ^~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+In file included from test.c:5:0:
+exercises.c:68:22: error: passing argument 2 of 'strcpy' makes pointer from integer without a cast [-Werror=int-conversion]
+    strcpy(nre->edad, edad);
+                      ^~~~
+In file included from test.c:3:0:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+                                        ^~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+014d752
