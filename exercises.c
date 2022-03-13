@@ -132,14 +132,14 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) {
    int suma, j;
    for(j=0; j<= a->capacidad; j++){
-      suma+=*a->datos;
+      suma=*a->datos;
 
    }
    for(j=0; j<= b->capacidad; j++){
-      suma+=*b->datos;
+      suma=*b->datos;
 
    }
-   c->capacidad=*b->datos+*a->datos;
+   c->capacidad=suma;
 }
 
 /*
