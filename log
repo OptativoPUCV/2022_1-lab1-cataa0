@@ -835,3 +835,9 @@ exercises.c:41:4: error: statement with no effect [-Werror=unused-value]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a4ccc29
+do., 13 de mar. de 2022  0:57:19: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  7|1
+total_score: 60/70
+f63a54b
