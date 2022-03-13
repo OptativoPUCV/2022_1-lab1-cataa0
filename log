@@ -745,3 +745,16 @@ do., 13 de mar. de 2022  0:15:55:
  tests:  6|2
 total_score: 50/70
 0fd4e62
+do., 13 de mar. de 2022  0:22:10: 
+ exercises.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:40:8: error: 'a' redeclared as different kind of symbol
+    int a[100], cont=0;
+        ^
+exercises.c:39:23: note: previous definition of 'a' was here
+ void sumaNultimos(int a[], int n, int m, int * suma) {
+                       ^
+Compilation failed
+125334d
