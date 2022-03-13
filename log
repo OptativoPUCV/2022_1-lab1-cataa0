@@ -758,3 +758,14 @@ exercises.c:39:23: note: previous definition of 'a' was here
                        ^
 Compilation failed
 125334d
+do., 13 de mar. de 2022  0:22:46: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:40:8: error: variable 'copia' set but not used [-Werror=unused-but-set-variable]
+    int copia[100], cont=0;
+        ^~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+92b84ae
