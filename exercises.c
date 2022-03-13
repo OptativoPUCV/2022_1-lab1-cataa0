@@ -37,8 +37,8 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-   
-   *suma=sumaN(a,n-m);
+   int num=n-m;
+   *suma=sumaN(a,num);
 
 }
 
@@ -86,6 +86,7 @@ typedef struct {
 
 Vector * crearVector(int n) {
    Vector * nuevo;
+   nuevo=(Vector*)malloc(sizeof(Vector));
    nuevo->datos=(int*)calloc(nuevo->capacidad,sizeof(int));
    return nuevo;
 }
