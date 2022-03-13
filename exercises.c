@@ -134,10 +134,9 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
    for(j=0; j<= a->capacidad; j++){
       suma+=*a->datos+*b->datos;
       c->datos=suma;
-      
+      c->capacidad++;   
    }
-   c->capacidad++;
-   
+
 }
 
 /*
