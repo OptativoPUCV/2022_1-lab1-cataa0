@@ -37,15 +37,16 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
-   int copia[100],cont=0;
-   for(int i=n; m!=0; i--){
-      copia[cont]=a[i];
+   int i=(n-m)+1, cont=0;
+   for(i;i<=n;i++){
+      a[cont]=a[i];
       cont++;
-      m--;
+
    }
-   a=copia;
    *suma=sumaN(a, cont);
 }
+
+
 
 
 
