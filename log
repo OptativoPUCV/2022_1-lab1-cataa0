@@ -580,3 +580,18 @@ exercises.c:90:20: error: 'nuevo' is used uninitialized in this function [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a38e91a
+sá., 12 de mar. de 2022 22:31:28: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:142:12: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    c->datos=suma;
+            ^
+test.c: In function 'crearVector':
+exercises.c:90:20: error: 'nuevo' is used uninitialized in this function [-Werror=uninitialized]
+    nuevo->capacidad=n;
+    ~~~~~~~~~~~~~~~~^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e8e61e2
