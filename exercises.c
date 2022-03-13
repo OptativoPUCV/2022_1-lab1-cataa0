@@ -139,7 +139,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
       suma+=*b->datos;
 
    }
-   c=suma;
+   c=*b->datos+*a->datos;
 }
 
 /*

@@ -623,3 +623,14 @@ exercises.c:142:5: error: assignment makes pointer from integer without a cast [
 cc1.exe: all warnings being treated as errors
 Compilation failed
 6a83859
+sá., 12 de mar. de 2022 22:58:42: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:142:5: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    c=*b->datos+*a->datos;
+     ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+ebdc4bc
