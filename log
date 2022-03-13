@@ -664,3 +664,14 @@ sá., 12 de mar. de 2022 23:28:54:
  tests:  5|3
 total_score: 40/70
 8d31619
+sá., 12 de mar. de 2022 23:30:02: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaV':
+exercises.c:139:12: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    c->datos=suma;
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e0e3580
