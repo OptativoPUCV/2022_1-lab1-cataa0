@@ -88,6 +88,7 @@ Vector * crearVector(int n) {
    Vector * nuevo;
    nuevo=NULL;
    nuevo->datos=(int*)calloc(nuevo->capacidad,sizeof(int));
+   nuevo->capacidad=n;
    return nuevo;
 }
 
