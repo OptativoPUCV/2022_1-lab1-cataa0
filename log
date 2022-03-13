@@ -554,3 +554,14 @@ exercises.c:89:6: error: 'nuevo' is used uninitialized in this function [-Werror
 cc1.exe: all warnings being treated as errors
 Compilation failed
 4b9d290
+sá., 12 de mar. de 2022 22:23:14: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function 'crearVector':
+exercises.c:90:20: error: 'nuevo' is used uninitialized in this function [-Werror=uninitialized]
+    nuevo->capacidad=n;
+    ~~~~~~~~~~~~~~~~^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f9adbb4
