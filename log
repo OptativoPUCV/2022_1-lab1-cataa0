@@ -787,3 +787,14 @@ do., 13 de mar. de 2022  0:28:13:
  tests:  7|1
 total_score: 60/70
 45e21b4
+do., 13 de mar. de 2022  0:31:49: 
+ exercises.c | 9 +++++++--
+ 1 file changed, 7 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function 'sumaNultimos':
+exercises.c:46:8: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+    suma=sumaN(copia, cont);
+        ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0c2a71a
