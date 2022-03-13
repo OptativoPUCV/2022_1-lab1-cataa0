@@ -494,3 +494,14 @@ sá., 12 de mar. de 2022 21:05:35:
  tests:  4|4
 total_score: 30/70
 8bfe662
+sá., 12 de mar. de 2022 21:24:41: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+test.c: In function 'crearVector':
+exercises.c:89:35: error: 'nuevo' is used uninitialized in this function [-Werror=uninitialized]
+    nuevo->datos=(int*)calloc(nuevo->capacidad,sizeof(int));
+                              ~~~~~^~~~~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7c23d34
