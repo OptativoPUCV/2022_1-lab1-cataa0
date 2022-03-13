@@ -606,3 +606,9 @@ exercises.c:90:20: error: 'nuevo' is used uninitialized in this function [-Werro
 cc1.exe: all warnings being treated as errors
 Compilation failed
 a10b755
+sá., 12 de mar. de 2022 22:53:22: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  5|3
+total_score: 40/70
+887c29d
