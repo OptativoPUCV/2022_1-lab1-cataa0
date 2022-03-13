@@ -769,3 +769,9 @@ exercises.c:40:8: error: variable 'copia' set but not used [-Werror=unused-but-s
 cc1.exe: all warnings being treated as errors
 Compilation failed
 92b84ae
+do., 13 de mar. de 2022  0:23:20: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+9225785
