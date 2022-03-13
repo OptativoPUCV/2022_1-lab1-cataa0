@@ -703,3 +703,9 @@ sá., 12 de mar. de 2022 23:34:30:
  tests:  5|3
 total_score: 40/70
 5dd8b9d
+sá., 12 de mar. de 2022 23:41:20: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  5|3
+total_score: 40/70
+c091497
